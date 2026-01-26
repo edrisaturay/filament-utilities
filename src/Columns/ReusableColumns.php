@@ -3,6 +3,7 @@
 namespace EdrisaTuray\FilamentUtilities\Columns;
 
 use Filament\Tables\Columns\TextColumn;
+use Tapp\FilamentProgressBarColumn\Columns\ProgressBarColumn;
 
 /**
  * Class ReusableColumns
@@ -31,5 +32,13 @@ class ReusableColumns
             ->dateTime()
             ->sortable()
             ->toggleable(isToggledHiddenByDefault: true);
+    }
+
+    /**
+     * Get a standardized progress bar column.
+     */
+    public static function progressBar(string $name): ProgressBarColumn
+    {
+        return ProgressBarColumn::make($name);
     }
 }
