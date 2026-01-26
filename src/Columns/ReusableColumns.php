@@ -1,6 +1,6 @@
 <?php
 
-namespace Raison\FilamentUtilities\Columns;
+namespace EdrisaTuray\FilamentUtilities\Columns;
 
 use Filament\Tables\Columns\TextColumn;
 

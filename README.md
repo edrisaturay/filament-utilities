@@ -1,5 +1,9 @@
 # Filament Utilities Package
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/edrisaturay/filament-utilities.svg?style=flat-square)](https://packagist.org/packages/edrisaturay/filament-utilities)
+[![Total Downloads](https://img.shields.io/packagist/dt/edrisaturay/filament-utilities.svg?style=flat-square)](https://packagist.org/packages/edrisaturay/filament-utilities)
+[![GitHub](https://img.shields.io/github/license/edrisaturay/filament-utilities.svg?style=flat-square)](https://github.com/edrisaturay/filament-utilities/blob/main/LICENSE.md)
+
 A collection of reusable components, traits, and helper functions for Filament v5 applications. This package ensures UI consistency and reduces boilerplate across multiple panels.
 
 ## Features
@@ -22,7 +26,7 @@ Standardized table columns for consistent data display:
 Add the package to your `composer.json` (usually handled via the root project in this starter kit):
 
 ```bash
-composer require raison/filament-utilities
+composer require edrisaturay/filament-utilities
 ```
 
 The service provider is automatically registered via Laravel's package discovery.
@@ -32,7 +36,7 @@ The service provider is automatically registered via Laravel's package discovery
 ### Using Reusable Fields in a Form
 
 ```php
-use Raison\FilamentUtilities\Fields\ReusableFields;
+use EdrisaTuray\FilamentUtilities\Fields\ReusableFields;
 
 public static function form(Form $form): Form
 {
@@ -48,7 +52,7 @@ public static function form(Form $form): Form
 ### Using Reusable Columns in a Table
 
 ```php
-use Raison\FilamentUtilities\Columns\ReusableColumns;
+use EdrisaTuray\FilamentUtilities\Columns\ReusableColumns;
 
 public static function table(Table $table): Table
 {
@@ -64,7 +68,7 @@ public static function table(Table $table): Table
 ### Implementing Panel Access
 
 ```php
-use Raison\FilamentUtilities\Concerns\CanAccessPanel;
+use EdrisaTuray\FilamentUtilities\Concerns\CanAccessPanel;
 
 class User extends Authenticatable
 {

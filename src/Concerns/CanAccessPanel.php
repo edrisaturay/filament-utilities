@@ -1,6 +1,6 @@
 <?php
 
-namespace Raison\FilamentUtilities\Concerns;
+namespace EdrisaTuray\FilamentUtilities\Concerns;
 
 use Filament\Panel;
 

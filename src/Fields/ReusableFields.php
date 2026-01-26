@@ -1,6 +1,6 @@
 <?php
 
-namespace Raison\FilamentUtilities\Fields;
+namespace EdrisaTuray\FilamentUtilities\Fields;
 
 use Filament\Forms\Components\TextInput;
 

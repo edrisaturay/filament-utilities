@@ -1,6 +1,6 @@
 <?php
 
-namespace Raison\FilamentUtilities;
+namespace EdrisaTuray\FilamentUtilities;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
