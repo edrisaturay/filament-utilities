@@ -21,7 +21,8 @@
         "cocosmos/filament-quick-add-select": "^1.0",
         "cheesegrits/filament-phone-numbers": "^2.1",
         "tapp/filament-progress-bar-column": "^1.0",
-        "malzariey/filament-daterangepicker-filter": "^4.0"
+        "malzariey/filament-daterangepicker-filter": "^4.0",
+        "a909m/filament-statefusion": "^2.3"
     },
     "autoload": {
         "psr-4": {

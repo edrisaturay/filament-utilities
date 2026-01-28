@@ -2,6 +2,7 @@
 
 namespace EdrisaTuray\FilamentUtilities\Filters;
 
+use A909M\FilamentStateFusion\Tables\Filters\StateFusionSelectFilter;
 use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
 
 /**
@@ -17,5 +18,13 @@ class ReusableFilters
     public static function dateRange(string $name = 'created_at'): DateRangeFilter
     {
         return DateRangeFilter::make($name);
+    }
+
+    /**
+     * Get a standardized state filter.
+     */
+    public static function state(string $name = 'status'): StateFusionSelectFilter
+    {
+        return StateFusionSelectFilter::make($name);
     }
 }

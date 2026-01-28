@@ -2,6 +2,9 @@
 
 namespace EdrisaTuray\FilamentUtilities\Fields;
 
+use A909M\FilamentStateFusion\Forms\Components\StateFusionRadio;
+use A909M\FilamentStateFusion\Forms\Components\StateFusionSelect;
+use A909M\FilamentStateFusion\Forms\Components\StateFusionToggleButtons;
 use Cheesegrits\FilamentPhoneNumbers\Forms\Components\PhoneNumber;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -62,5 +65,29 @@ class ReusableFields
     public static function phone(string $name = 'phone'): PhoneNumber
     {
         return PhoneNumber::make($name);
+    }
+
+    /**
+     * Get a standardized state select field.
+     */
+    public static function stateSelect(string $name): StateFusionSelect
+    {
+        return StateFusionSelect::make($name);
+    }
+
+    /**
+     * Get a standardized state radio field with descriptions.
+     */
+    public static function stateRadio(string $name): StateFusionRadio
+    {
+        return StateFusionRadio::make($name);
+    }
+
+    /**
+     * Get a standardized state toggle buttons field with icons and colors.
+     */
+    public static function stateToggleButtons(string $name): StateFusionToggleButtons
+    {
+        return StateFusionToggleButtons::make($name);
     }
 }
