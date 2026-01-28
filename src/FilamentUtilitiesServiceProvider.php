@@ -17,10 +17,15 @@ class FilamentUtilitiesServiceProvider extends PackageServiceProvider
      */
     public function configurePackage(Package $package): void
     {
-        $package
-            ->name('filament-utilities')
-            ->hasViews()
-            ->hasTranslations();
+        $package->name('filament-utilities');
+
+        $viewsPath = __DIR__.'/../resources/views';
+
+        if (is_dir($viewsPath)) {
+            $package->hasViews();
+        }
+
+        $package->hasTranslations();
     }
 
     /**
